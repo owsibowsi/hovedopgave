@@ -1,0 +1,389 @@
+CSS
+
+/* CCS TIL forside NAVIGATION */
+body {
+  background: #2B3235;
+  color: white;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.progressbar {
+  position: fixed;
+  top: 0;
+  left: 85%;
+  background: #808080;
+  width: 1px;
+  z-index: 1;
+}
+
+.navigation-wrapper ul {
+  margin-top: 150px;
+  margin-left: 100px;
+  margin-bottom: 150px;
+  list-style: none;
+  position: absolute;
+}
+
+.navigation-item {
+  display: block;
+  user-select: none;
+  margin: 80px 0;
+}
+
+a {
+  font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+  font-size: 100px;
+  text-decoration: none;
+  color: #808080;
+}
+
+a:hover{
+	color: #808080;
+}
+
+span {
+  position: relative;
+  display: block;
+}
+
+.navigation-item span:before {
+  width: 0;
+  color: #ffffff;
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  transition: all 1s cubic-bezier(0.83, 0, 0.07, 0.95);
+}
+
+.navigation-item span:hover:before {
+  width: 100%;
+}
+
+.project-preview-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.project-preview {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  width: 0px;
+  height: 400px;
+  background: url(img-1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .progressbar,
+  .project-preview-wrapper {
+    display: none;
+  }
+
+  a {
+    font-size: 34px;
+  }
+	
+	.navigation-wrapper ul {
+  margin: 40px 0 40px 20px;
+}
+}
+/* ---------------- */
+
+.fontsh1{
+		background: rgb(209,39,40);
+background: linear-gradient(162deg, rgb(209, 39, 40) 62%, rgba(255,255,255,0) 62.4%, rgba(255,255,255,0) 64%, rgb(255, 255, 255) 64.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	text-decoration: none;
+}
+
+/*  fonts */
+.fonth2{
+	line-height: 1;
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 70px;
+	color: #fff;
+}
+
+.subspan{
+	font-family: futura-pt, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 130px;
+	line-height: 1;
+	color: #808080;
+}
+
+.font-wrapper{
+	margin: 180px 0 180px 5%;
+	
+}
+
+	.font-content-wrapper{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
+.font-content{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	width: 70%;
+}
+
+.childh3{
+	font-family: tangelo, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 100px;
+	margin: auto;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.lawh3{
+	font-family: lato, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 100px;
+	margin: auto;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.femininh3{
+	font-family: recherche, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 100px;
+	margin: auto;
+	line-height: 1;
+	text-align: center;
+}
+
+@media (max-width: 900px) {
+	.font-content{
+		flex-direction: column;
+	}
+	
+	.font-content-wrapper{
+		margin: 60px 0!important;
+	}
+	
+	.lawh3{
+		margin-bottom: 10px!important;
+	}
+	
+	footer{
+		flex-direction: column!important;
+		width: 100%!important;
+		margin: 0!important;
+	}
+	
+	.font-wrapper{
+	margin: 20px 0 20px 2%!important;
+	
+}
+	
+	.farveh3-wrapper{
+	margin: 60px 0 20px 2%!important;
+}
+	
+	.font-ex-wrapper{
+	margin: 20px 0 20px 2%!important;
+}
+	
+	h1{
+		font-size: 37px !important;
+	}
+
+	.farveh3{
+		font-size: 40px!important;
+	}
+	
+	.farvep{
+		font-size: 16px!important;
+		width: 95%!important;
+	}
+	
+	.sansserifh3, .scripth3, .serifh3{
+		font-size: 40px !important;
+	}
+	
+	.sansserifp, .scriptp, .serifp{
+		width: 95%!important;
+		font-size: 16px !important;
+	}
+	
+	.femininh3, .lawh3, .childh3{
+		font-size: 32px !important;
+		line-height: 1.3;
+	}
+	
+	.font-wrapper{
+		margin: 70px 0;
+	}
+	
+	.subspan, .serifh3{
+		font-size: 40px;
+	}
+	
+	.fonth2{
+		font-size: 32px;
+	}
+		}
+	
+	/* Font eksempler */
+.font-ex-wrapper{
+	margin: 80px 0 180px 5%;
+}
+
+.serif-wrapper, .sansserif-wrapper{
+	display: flex;
+	flex-direction: column;
+}
+
+.sansserif-wrapper{
+	align-content: flex-end;
+}
+
+.serifh3{
+	font-family: nocturne-serif, serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 130px;
+	line-height: 1;
+	
+}
+
+.serifp{
+	font-family: nocturne-serif,serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	width: 50%;
+	color: #808080;
+	margin-bottom: 45px;
+	flex-wrap: wrap;
+}
+
+.sansserifh3{
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 130px;
+	line-height: 1;
+}
+
+.sansserifp{
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 20px;
+	width: 50%;
+	color: #808080;
+	margin-bottom: 45px;
+	flex-wrap: wrap;
+}
+
+.scripth3{
+font-family: recherche,sans-serif;
+font-weight: 400;
+font-style: normal;
+	font-size: 130px;
+	line-height: 1;
+}
+
+.scriptp{
+font-family: recherche,sans-serif;
+font-weight: 400;
+font-style: normal;
+	font-size: 30px;
+	width: 50%;
+	color: #808080;
+	margin-bottom: 45px;
+	flex-wrap: wrap;
+}
+
+.highlight{
+	color: white;
+	white-space:nowrap;
+}
+
+/* Farver */
+
+#greyh3{
+	color: #808080;
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 70px
+}
+
+#redh3{
+	color: #D12728;
+		font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 70px
+}
+
+#blueh3{
+	color: blue;
+		font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 70px
+}
+
+.farveh3-wrapper{
+	margin: 180px 0 0 5%;
+}
+
+.farvep{
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 20px;
+	width: 50%;
+	color: #808080;
+}
+
+.farveh3{
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 130px;
+	line-height: 1;
+}
+
+/* footer */
+footer{
+	position: relative;
+	width: 85%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 100px 15% 0 0;
+	text-align: center;
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}

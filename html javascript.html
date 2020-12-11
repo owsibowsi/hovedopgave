@@ -1,0 +1,265 @@
+<!-- FORSIDE KODE -->
+<!-- Kode beskrevet i rapport-->
+<div class="navigation-wrapper">
+    <div class="project-preview-wrapper">
+      <div class="project-preview"></div>
+    </div>
+    <ul class="navigation-list">
+      <li class="navigation-item">
+        <a class="navigation-link navigation-link-1" href="/farver">
+          <span data-text="FARVER">FARVER</span>
+        </a>
+      </li>
+
+      <li class="navigation-item">
+        <a class="navigation-link navigation-link-2" href="/skrifttyper">
+          <span data-text="SKRIFTTYPER">SKRIFTTYPER</span>
+        </a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link navigation-link-3" href="#">
+          <span data-text="TBA">TBA</span>
+        </a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link navigation-link-4" href="#">
+          <span data-text="TBA2">TBA2</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  
+  
+  <!-- progress bar -->
+  <div class="progressbar"></div>
+  
+  
+  
+  
+   <script>
+    $(document).ready(function() {
+      TweenMax.set(".project-preview", { width: 0 });
+
+      var tl = new TimelineLite();
+
+      $(document)
+        .on("mouseover", ".navigation-item", function(evt) {
+          tl = new TimelineLite();
+          tl.to($(".project-preview"), 1, {
+            width: "600px",
+            ease: Expo.easeInOut,
+
+          });
+        })
+        .on("mouseout", ".navigation-item", function(evt) {
+          tl = new TimelineLite();
+          tl.to($(".project-preview"), 0.5, {
+            width: 0,
+            ease: Expo.easeInOut
+          });
+        });
+    });
+
+    $(".navigation-link-1").hover(function() {
+      $(".project-preview").css({ "background-image": "url(https://a58.outsource.dk/wp-content/uploads/2020/12/color-600.jpg)" });
+    });
+
+    $(".navigation-link-2").hover(function() {
+      $(".project-preview").css({ "background-image": "url(https://a58.outsource.dk/wp-content/uploads/2020/12/font-600.jpg)" });
+    });
+
+    $(".navigation-link-3").hover(function() {
+      $(".project-preview").css({ "background-image": "url(https://a58.outsource.dk/wp-content/uploads/2020/12/placeholder-1.png)" });
+    });
+
+    $(".navigation-link-4").hover(function() {
+      $(".project-preview").css({ "background-image": "url(https://a58.outsource.dk/wp-content/uploads/2020/12/placeholder-1.png)" });
+    });
+
+
+
+
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop(),
+        dh = $(document).height(),
+        wh = $(window).height();
+      scrollPercent = (scroll / (dh - wh)) * 100;
+      $(".progressbar").css("height", scrollPercent + "%");
+    });
+    
+  </script>
+
+<!-- FORSIDE KODE SLUT-->
+
+<!-- FARVER UNDERSIDE -->
+<!-- Kode beskrevet i rapport-->
+
+<div class="font-wrapper">
+
+    <h2  class="fonth2">FARVER <br>  
+    <span class="subspan"> HAR STOR <br> BETYDNING </span>
+    FOR HVAD KUNDERNE TÆNKER <br>
+    <span class="subspan">OM DIT BRAND</span> </h2>
+    </div>
+    
+    <div class="font-content-wrapper">
+    <div class="font-content">
+        <h3 class="lawh3" id="blueh3">JEG ER PÅLIDELIG</h3>
+        <h3 class="lawh3" id="redh3">JEG TAGER BLIKFANG</h3>
+        <h3 class="lawh3" id="greyh3">JEG ER NEUTRAL</h3>
+    </div>
+    </div>
+    
+    <div class="farveh3-wrapper">
+        <h3 class="farveh3">PRIMÆRFARVER</h3>
+    </div>
+    
+    
+    <div class="font-ex-wrapper">
+        <div class="sansserif-wrapper">
+            <h3 class="farveh3">BLÅ</h3>
+            <p class="farvep"> <span class="highlight"> Blå viser loyalitet, sikkerhed og styrke </span>Forbindelsen til havet og en blå himmel giver fornemmelsen af ro og afslappende følelser. Det bliver også associeret med styrke, loyalitet, sikkerhed og pålidelighed. Af den årsag bliver blå typisk anvendt til teknologi, business og banker.</p>
+        </div>
+        <div class="sansserif-wrapper">
+            <h3 class="farveh3">RØD</h3>
+            <p class="farvep"> <span class="highlight"> Opmærksomhed, intensitet, passion. </span> Rød er kendt som en energisk farve. Det er den farve der skaber mest opmærksomhed og bliver derfor brugt til meddelelser og advarsler.
+            Røde farver er meget kraftfulde og bliver forbundet med mange stærke følelser.
+            Rød kan fremkalde stærke følelser som passion, intensitet og kærlighed.
+            Farven rød og dets evne til at skabe opmærksomhed bliver anvendt i trafikken til vigtig information, som stop og fare.
+            I marketing er det kendt som et symbol på at noget haster. Det er et kraftfuldt redskab mod impulsive shoppere og bliver typisk anvendt til store udsalgsskilte.
+                </p>
+        </div>
+        
+            <div class="sansserif-wrapper">
+            <h3 class="farveh3">GUL</h3>
+            <p class="farvep"><span class="highlight"> Entusiasme, optimisme, discount og udsalg.</span>Gul er en meget alsidig farve. Lys gul fremviser entusiasme og optimisme. Kan typisk provokere brugeren til at tænke. Giver en fornemmelse af friskhed og energi.
+    Hvor en mørkere gul som guld, repræsenterer antikvitet og alderdom. Det symboliserer mere tidsløshed og visdom.
+    Gul kan skabe varme med dets forbindelse til sol og ild.
+    Gul bliver også anvendt til at symbolisere billigt. Bliver forbundet med discount og udsalg.</p>
+        </div>
+    
+    </div>
+    
+    
+        <div class="farveh3-wrapper">
+        <h3 class="farveh3">SEKUNDÆRFARVER</h3>
+        </div>
+        
+        <div class="font-ex-wrapper">
+        <div class="sansserif-wrapper">
+            <h3 class="farveh3">GRØN</h3>
+            <p class="farvep"> <span class="highlight">Grøn er rolig og forfriskende </span>Giver en fornemmelse for vækst og fornyelse. Det bliver typisk forbundet med miljøbevidsthed og sundhed. Grøn er stabil og udholdende. Skal dog bruges med omtanke da det ligesom rød, kan blive fundet med rigtigt og forkert.</p>
+        </div>
+        <div class="sansserif-wrapper">
+            <h3 class="farveh3">ORANGE</h3>
+            <p class="farvep"> <span class="highlight"> Varm og levende farve. <br> Giver energi, varme og er imødekommende. </span> Orange er en sjov og ungdommelig farve, som sprudler med varme og energi. Orange er, med sin forbindelse til sol og appelsiner, sommerlig og glad.
+                </p>
+        </div>
+        
+            <div class="sansserif-wrapper">
+            <h3 class="farveh3">VIOLET</h3>
+            <p class="farvep"><span class="highlight"> Blander stimuli og beroligende. Mystisk og kreativ.</span>Violet indeholder en balance mellem den røde farves stimulering og den blå farves beroligende effekt. Kontrasten kan forårsage uro, medmindre undertonerne er klart defineret. Lilla giver en følelse af mystik og kongelighed, og er ofte vellidt af meget kreative og excentriske typer.</p>
+        </div>
+    
+    </div>
+    
+    <footer>
+        <div>
+            <p>2020 - Leasing prototype</p>
+        </div>
+            <div>
+            <p>Besøg Outsource.dk for mere info</p>
+        </div>
+            <div>
+            <p>Lavet af Oskar Wiegaard <br>
+                For Outsource</p>
+        </div>
+            
+    </footer>
+    
+    <!--Progress bar -->
+    
+    <div class="progressbar"></div>
+    
+    <script>
+        
+         $(window).scroll(function() {
+            var scroll = $(window).scrollTop(),
+              dh = $(document).height(),
+              wh = $(window).height();
+            scrollPercent = (scroll / (dh - wh)) * 100;
+            $(".progressbar").css("height", scrollPercent + "%");
+          });
+          
+    </script>
+
+
+<!-- FARVE KODE SLUT-->
+
+<!-- SKRIFTTYPER UNDERSIDE -->
+<!-- Kode beskrevet i rapport-->
+<div class="font-wrapper">
+
+    <h2  class="fonth2">SKRIFTTYPER <br>  
+    <span class="subspan"> HAR STOR </span>
+    PSYKOLOGISK BETYDNING <br>
+    <span class="subspan">FOR ET DESIGN</span> </h2>
+    </div>
+    
+    <div class="font-content-wrapper">
+    <div class="font-content">
+        <h3 class="femininh3">Jeg er feminin</h3>
+        <h3 class="lawh3">JEG ER SERIØS</h3>
+        <h3 class="childh3">Jeg er barnlig</h3>
+    </div>
+    </div>
+    
+    <div class="font-ex-wrapper">
+        <div class="serif-wrapper">
+            <h3 class="serifh3">SERIF</h3>
+            <p class="serifp"> <span class="highlight"> Serif er pålidelig, trofast og et sikkert valg. </span>Serif afgiver en gammel  og historisk følelse. Forbindes med sikkerhed og pålidelighed. Det stammer fra det latiske alphabet og bliver set over alt i det gamle Rom. Bliver typisk anvendt til print i aviser og magasiner da de kan være lettere at læse når der omhandler længere tekster. </p>
+        </div>
+        <div class="sansserif-wrapper">
+            <h3 class="sansserifh3">SANS-SERIF</h3>
+            <p class="sansserifp"> <span class="highlight"> Sans serif er morderne, ren og nytænkene. </span> Bliver typisk anvendt i formelle sammenhæng. Bliver sat i forbindelse med stabilitet og professionalisme. Sans Serif blev populær i takt med computeren kom til verden og blev i den forbindelse set som et moderne og rent udtryk. Det kan få din virksomhed til vise fremdrift og fokus på udvikling. Kan være godt til nye start-ups og online virksomheder der vil vise nytænkning og fremstå moderne. 
+                </p>
+        </div>
+        
+            <div class="sansserif-wrapper">
+            <h3 class="scripth3">Script fonts</h3>
+            <p class="scriptp"><span class="highlight"> Script er feminin, elegant og personlig.</span>Script fonts er feminine, romantiske, elegante og kan vise mere personlighed. Skal anvendes med omtanke, da de som vist i eksemplet her er sværre at læse og kan være svære at få til at passe ind i universet.
+                </p>
+        </div>
+        
+    </div>
+    
+    <footer>
+        <div>
+            <p>2020 - Leasing prototype</p>
+        </div>
+            <div>
+            <p>Besøg Outsource.dk for mere info</p>
+        </div>
+            <div>
+            <p>Lavet af Oskar Wiegaard <br>
+                For Outsource</p>
+        </div>
+            
+    </footer>
+    
+    <!--Progress bar -->
+    
+    <div class="progressbar"></div>
+    
+    <script>
+        
+         $(window).scroll(function() {
+            var scroll = $(window).scrollTop(),
+              dh = $(document).height(),
+              wh = $(window).height();
+            scrollPercent = (scroll / (dh - wh)) * 100;
+            $(".progressbar").css("height", scrollPercent + "%");
+          });
+          
+    </script>
